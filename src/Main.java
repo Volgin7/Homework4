@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -15,7 +16,6 @@ public class Main {
         } else {
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать ");
         }
-
     }
     public static void task2() {
 
@@ -28,6 +28,17 @@ public class Main {
         } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
+    }
+    public static void task3() {
 
+        System.out.println("Задача 3");
+
+        float velocity = 60.1f;
+
+        if (velocity > 60.0f) {
+            System.out.println("Если скорость " + velocity + " то придется заплатить штраф");
+        } else {
+            System.out.println("Если скорость " + velocity + " то можно ездить спокойно");
+        }
     }
 }
