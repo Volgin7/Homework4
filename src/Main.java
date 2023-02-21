@@ -11,8 +11,9 @@ public class Main {
 
     public static void task1() {
         System.out.println("Задача 1");
-        int age = 18;
-        if (age >= 18) {
+        int age = 19;
+        int ageOfAdult = 18;
+        if (age >= ageOfAdult) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
         } else {
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать ");
@@ -22,7 +23,8 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
         float temperature = 4.9f;
-        if (temperature < 5.0f) {
+        float boundaryTemparature = 5.0f;
+        if (temperature < boundaryTemparature) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
         } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
@@ -32,7 +34,8 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
         float velocity = 60.1f;
-        if (velocity > 60.0f) {
+        float limitOfVelocity = 60.0f;
+        if (velocity > limitOfVelocity) {
             System.out.println("Если скорость " + velocity + " то придется заплатить штраф");
         } else {
             System.out.println("Если скорость " + velocity + " то можно ездить спокойно");
