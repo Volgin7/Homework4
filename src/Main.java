@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -16,6 +17,7 @@ public class Main {
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать ");
         }
     }
+
     public static void task2() {
         System.out.println("Задача 2");
         float temperature = 4.9f;
@@ -25,6 +27,7 @@ public class Main {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         float velocity = 60.1f;
@@ -34,6 +37,7 @@ public class Main {
             System.out.println("Если скорость " + velocity + " то можно ездить спокойно");
         }
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         int age = 25;
@@ -55,20 +59,38 @@ public class Main {
         }
 
     }
+
     public static void task5() {
         System.out.println("Задача 5");
         int age = 15;
         if (age < 5) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
+        } else {
+            if (age > 5 && age < 14) {
+                System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого");
             } else {
-                if (age > 5 && age < 14) {
-                    System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого");
-                    } else {
-                        if (age > 14) {
-                            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождения взрослого");
-                            }
-                    }
+                if (age > 14) {
+                    System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождения взрослого");
+                }
             }
+        }
 
     }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        int cabinsCapacityOfPassengers = 102;
+        int numberOfSeats = 60;
+        int numberOfPassenger = 61;
+        if (numberOfPassenger > cabinsCapacityOfPassengers) {
+            System.out.println("Вагон полностью забит");
+            } else {
+                if (numberOfPassenger > numberOfSeats) {
+                    System.out.println("В вагоне есть стоячее место");
+                    } else {
+                        System.out.println("В вагоне есть сидячее и стоячее место");
+                    }
+            }
+    }
+
 }
