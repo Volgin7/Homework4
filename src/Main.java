@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -84,13 +85,33 @@ public class Main {
         int numberOfPassenger = 61;
         if (numberOfPassenger > cabinsCapacityOfPassengers) {
             System.out.println("Вагон полностью забит");
+        } else {
+            if (numberOfPassenger > numberOfSeats) {
+                System.out.println("В вагоне есть стоячее место");
             } else {
-                if (numberOfPassenger > numberOfSeats) {
-                    System.out.println("В вагоне есть стоячее место");
+                System.out.println("В вагоне есть сидячее и стоячее место");
+            }
+        }
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int one = 161;
+        int two = 161;
+        int three = 162;
+        if (one > two && one > three) {
+            System.out.println("Число one, равное " + one + " - большее");
+            } else {
+                if (two > one && two > three) {
+                    System.out.println("Число two, равное " + two + " - большее");
                     } else {
-                        System.out.println("В вагоне есть сидячее и стоячее место");
+                        if (three > one && three > two) {
+                            System.out.println("Число three, равное " + three + " - большее");
+                            } else {
+                                System.out.println("Числа равны");
+                        }
                     }
             }
     }
-
 }
+
